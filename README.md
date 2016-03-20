@@ -1,2 +1,1 @@
-# data_structure
-常用算法
+# javascript版数据结构练习
