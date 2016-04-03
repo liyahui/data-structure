@@ -23,7 +23,7 @@ function Stack(){
 
 	// 如果栈里没有元素返回true，否则返回false
 	this.isEmpty = function(){
-		return items.length == 0;
+		return items.length === 0;
 	}
 
 	// 移除栈里所有元素
@@ -43,24 +43,24 @@ function Stack(){
 
 }
 
-var s = new Stack();
+var stack = new Stack();
 
-console.log('isEmpty: ' + s.isEmpty()); // true
+console.log(stack.isEmpty()); // true
 
-s.push(1);
-s.push(2);
-s.push(3);
+stack.push(1);
+stack.push(2);
+stack.push(3);
 
-console.log('isEmpty: ' + s.isEmpty()); // false
+console.log(stack.isEmpty()); // false
 
-console.log(s.print()); // 1, 2, 3
+console.log(stack.print()); // 1, 2, 3
 
-s.pop();
+stack.pop();
 
-console.log(s.print()); // 1, 2
+console.log(stack.print()); // 1, 2
 
-console.log(s.peek()); // 2
+console.log(stack.peek()); // 2
 
-s.clear();
+stack.clear();
 
-console.log(s.print()); // 
+console.log(stack.print()); // 
