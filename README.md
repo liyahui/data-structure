@@ -1,1 +1,1 @@
-# javascript版数据结构练习
+# 学习JavaScript数据结构与算法
