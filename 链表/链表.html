@@ -25,30 +25,14 @@
 
 			// 链表末尾添加元素
 			this.append = function(element) {
-				var node = new Node(element)
-
-				if (head === null) {
-					// 链表为空，直接让head指向node元素
-					head = node
-				} else {
-					// 链表不为空，需要找到最后一个元素，然后就是让最后一个元素的next指向新添加项
-					var current = head
-
-					while (current.next) {
-						current = current.next
-					}
-
-					current.next = node
-				}
-
-				length++
+				return this.insert(length, element)
 			}
 
 			// 向列表的指定位置插入元素
 			this.insert = function(position, element) {
 
 				// 检查位置是否合法
-				if (position < 0 || position >= length) {
+				if (position < 0 || position > length) {
 					return false
 				}
 
@@ -153,11 +137,10 @@
 		}
 
 		var linkedList = new LinkedList()
-
 		console.log(linkedList.isEmpty(), linkedList.size()) // true 0 
-		linkedList.append('a')
-		linkedList.append('b')
-		linkedList.append('c')
+		console.log(linkedList.append('a')) // true
+		console.log(linkedList.append('b')) // true
+		console.log(linkedList.append('c')) // true
 		console.log(linkedList.insert(1, 'd'), linkedList.print()) // true ["a", "d", "b", "c"]
 		console.log(linkedList.isEmpty(), linkedList.size()) // false 4 
 		console.log(linkedList.removeAt(2), linkedList.print()) // b ["a", "d", "c"]
