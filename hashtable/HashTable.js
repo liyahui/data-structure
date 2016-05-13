@@ -13,7 +13,7 @@ function HashTable() {
 			hash += key.charCodeAt(i)
 		}
 		// 为了得到比较小的值，使用hash值和某个数字取余
-		return hash % 48
+		return hash % 37
 	}
 
 	// 向散列表中增加一个新的项 
