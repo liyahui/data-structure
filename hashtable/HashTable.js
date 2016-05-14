@@ -34,10 +34,13 @@ function HashTable() {
 
 	// 辅助方法，显示散列表中存储的值
 	this.print = function() {
-		// 使用filter过滤掉undefined
-		return table.filter(function(item) {
-			return item
+		var result = []
+		table.forEach(function(item) {
+			if (item) {
+				result.push(item)
+			}
 		})
+		return result
 	}
 }
 
