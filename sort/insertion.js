@@ -13,6 +13,7 @@ function insertion(array) {
 		j = i
 		temp = array[i]
 
+		// 找出正确插入的位置
 		while (j > 0 && array[j - 1] > temp) {
 			array[j] = array[j - 1]
 			j--
