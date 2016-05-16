@@ -6,7 +6,7 @@
 function selection(array) {
 	var length = array.length
 
-	for (var i = 0; i < length; i++) {
+	for (var i = 0; i < length - 1; i++) {
 		var minIndex = i
 
 		for (var j = i; j < length; j++) {
@@ -25,5 +25,5 @@ function selection(array) {
 	return array
 }
 
-var array = [8, 3, 2, 7, 1, 4, 9, 6, 5]
-console.log(selection(array)) // 1, 2, 3, 4, 5, 6, 7, 8, 9
+var array = [5, 4, 3, 2, 1]
+console.log(selection(array)) // 1, 2, 3, 4, 5
