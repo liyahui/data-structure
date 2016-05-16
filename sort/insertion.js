@@ -28,6 +28,7 @@ var array = [5, 4, 3, 2, 1]
 console.log(insertion(array)) // [1, 2, 3, 4, 5]
 
 // 5 4 3 2 1
+
 // 4 5 3 2 1
 // 3 4 5 2 1
 // 2 3 4 5 1

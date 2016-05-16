@@ -1,5 +1,6 @@
 /**
  * 选择排序是找到数据中最小值并将其放置在第一位，接着找到第二最小值将其放置第二位，以此类推
+ * 
  * @param  {Array} array 需要排序的数组
  * @return {Array}       排序后的数组
  */
@@ -27,3 +28,8 @@ function selection(array) {
 
 var array = [5, 4, 3, 2, 1]
 console.log(selection(array)) // 1, 2, 3, 4, 5
+
+// 5 4 3 2 1
+
+// 1 4 3 2 5
+// 1 2 3 4 5
