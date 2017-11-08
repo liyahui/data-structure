@@ -14,5 +14,12 @@ const unique2 = array => {
   return result
 }
 
+const unique3 = array => {
+  return array.concat().sort().filter((item, index, array) => {
+    return !index || item !== array[index - 1]
+  })
+}
+
 console.log(unique1(array))
 console.log(unique2(array))
+console.log(unique3(array))
